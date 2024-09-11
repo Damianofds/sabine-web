@@ -10,8 +10,8 @@ const roboto = Pacifico({
 const backendConfig = {
     openaiKey: process.env.TALKY_OPENAI_API_KEY,
     qaUrl: process.env.TALKY_QA_API_URL,
-    audioUploadUrl: process.env.TALKY_DOCUMENT_UPLOAD_API_URL,
-    documentUploadurl: process.env.TALKY_AUDIO_UPLOAD_API_URL,
+    audioUploadUrl: process.env.TALKY_AUDIO_UPLOAD_API_URL,
+    documentUploadurl: process.env.TALKY_DOCUMENT_UPLOAD_API_URL,
 };
 
 export default function Home() {
