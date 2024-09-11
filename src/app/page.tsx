@@ -1,95 +1,80 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import { ClearStorageButton, TalkyUI } from "../lib/talkyui";
+import { Pacifico } from 'next/font/google';
+
+const roboto = Pacifico({
+    weight: ['400'],
+    subsets: ['latin'],
+});
+
+const backendConfig = {
+    openaiKey: process.env.TALKY_OPENAI_API_KEY,
+    qaUrl: process.env.TALKY_QA_API_URL,
+    audioUploadUrl: process.env.TALKY_DOCUMENT_UPLOAD_API_URL,
+    documentUploadurl: process.env.TALKY_AUDIO_UPLOAD_API_URL,
+};
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div>
+            <main style={{
+                        margin: "0 auto",
+                        width: "80vw",
+                        minWidth: "355px",
+                        maxWidth: "800px",
+                    }}>
+                <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                }}>
+                    <div style={{
+                            width: "100px",
+                            height: "100px",
+                            position: "relative"
+                        }}>
+                            <Image
+                                src="/sabine-logo.png"
+                                alt="Sabine.bot logo"
+                                fill={true}
+                                priority
+                            />
+                    </div>
+                    <div
+                        className={roboto.className}
+                        style={{
+                            fontSize: "36px",
+                            color: "rgb(78, 166, 153)",
+                            width: "80%",
+                            display: "flex",
+                            justifyContent: "left",
+                        }}>
+                        Sabine.bot
+                    </div>
+                </div>
+                <div
+                    style={{
+                        height: "80vh",
+                        backgroundImage: "url('azulejos-light.png')",
+                        backgroundRepeat: "round",
+                        backgroundSize:"200px",
+                        padding: "3vh 1vw 0vh"
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+                    }}>
+                    <TalkyUI
+                        initTalkURL="/talk-showcase.json"
+                        backendConfiguration={backendConfig} />
+                    <ClearStorageButton color="red" />
+                </div>
+            </main>
+            {/* <footer>
+                made by{" "}
+                <a target="_blank" href="https://damianofds.github.io">
+                    fds
+                </a>
+            </footer> */}
+            
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
