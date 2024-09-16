@@ -2,7 +2,7 @@
 	"conversation": [
 		{
 			"type": "bot-text",
-			"text": "Hey there! I'm your personal assistant, I will memorize any data for you!"
+			"text": "Hey there! I'm Sabine, I'm a bot and I want to become your personal assistant 💪"
 		},
 		{
 			"type": "bot-text",
@@ -10,11 +10,11 @@
 		},
 		{
 			"type": "bot-text",
-			"text": "📃 upload any of your document as pdf"
+			"text": "📃 upload any of your administrative pdf and image documents"
 		},
 		{
 			"type": "bot-text",
-			"text": "challenge me asking question of them 🎯"
+			"text": "challenge me asking question from them 🎯"
 		}
 	]
 }
