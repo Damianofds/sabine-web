@@ -22,6 +22,8 @@ export default function Home() {
                         width: "80vw",
                         minWidth: "355px",
                         maxWidth: "800px",
+                        height: "95vh",
+                        overflow: "hidden"
                     }}>
                 <div style={{
                     display: "flex",
@@ -65,15 +67,19 @@ export default function Home() {
                     <TalkyUI
                         initTalkURL="/talk-showcase.json"
                         backendConfiguration={backendConfig} />
-                    <ClearStorageButton color="red" />
+                    {/* <ClearStorageButton color="red" /> */}
                 </div>
             </main>
-            {/* <footer>
-                made by{" "}
-                <a target="_blank" href="https://damianofds.github.io">
-                    fds
-                </a>
-            </footer> */}
+            <footer>
+                <div style={{
+                        textAlign: "center"
+                    }}>
+                    made by{" "}
+                    <a target="_blank" href="https://damianofds.github.io">
+                        fds
+                    </a>
+                </div>
+            </footer>
             
         </div>
     );
