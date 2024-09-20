@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ClearStorageButton, TalkyUI } from "../lib/talkyui";
+import { TalkyUI } from "../lib/talkyui";
 import { Pacifico } from 'next/font/google';
 
 const roboto = Pacifico({
