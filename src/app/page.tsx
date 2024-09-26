@@ -23,7 +23,6 @@ export default function Home() {
                         minWidth: "355px",
                         maxWidth: "800px",
                         height: "95dvh",
-                        overflow: "hidden"
                     }}>
                 <div style={{
                     display: "flex",
