@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/env": "^14.2.8",
     "dotenv": "^16.4.5",
-    "react-talky-ui": "^0.0.34",
+    "react-talky-ui": "^0.0.35",
     "next": "14.2.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
