@@ -22,7 +22,7 @@ export default function Home() {
                         width: "80vw",
                         minWidth: "355px",
                         maxWidth: "800px",
-                        height: "95dvh",
+                        height: "95vh",
                     }}>
                 <div style={{
                     display: "flex",
