@@ -2,11 +2,11 @@
 	"conversation": [
 		{
 			"type": "bot-text",
-			"text": "Hey there! I'm Sabine, I'm a bot and I want to become your personal assistant 💪"
+			"text": "Hey there! I'm Sabine and I'm a bot 🤖"
 		},
 		{
 			"type": "bot-text",
-			"text": "🗣️ record a voice note"
+			"text": "🗣️ record a voice note, I'll transcribe it and memorize it for you"
 		},
 		{
 			"type": "bot-text",
@@ -14,7 +14,11 @@
 		},
 		{
 			"type": "bot-text",
-			"text": "challenge me asking question from them 🎯"
+			"text": "🖼️ Take a picture of something and I'll tell you what I jnow about it"
+		},
+		{
+			"type": "bot-text",
+			"text": "I'm still a junior bot assistant but I'm building up new skills every week!"
 		}
 	]
 }
