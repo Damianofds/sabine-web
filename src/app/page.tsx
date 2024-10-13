@@ -56,7 +56,7 @@ export default function Home() {
                 </div>
                 <div
                     style={{
-                        height: "80vh",
+                        height: "80dvh",
                         backgroundImage: "url('azulejos-light.png')",
                         backgroundRepeat: "round",
                         backgroundSize:"200px",
