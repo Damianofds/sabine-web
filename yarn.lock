@@ -2104,10 +2104,10 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-talky-ui@^0.0.52:
-  version "0.0.52"
-  resolved "https://registry.yarnpkg.com/react-talky-ui/-/react-talky-ui-0.0.52.tgz#d291b146305e56ada5787dcfa7c7401e2c37d159"
-  integrity sha512-1Fi06ynMeaXQRG4ULFZDFZlg451jGr1af5t5OjY2y9fR+WNYPA5s+ozfRg75yrRKj/9437T+TVPOShLGIktR1w==
+react-talky-ui@^0.0.53:
+  version "0.0.53"
+  resolved "https://registry.yarnpkg.com/react-talky-ui/-/react-talky-ui-0.0.53.tgz#a378338dc2ac4f6f7768a342d160cd53198c48a2"
+  integrity sha512-Ck9WFktmiEzR08Z/fX3iNGTSUuyp3bxdfykmQ2bSxQuY473lbhG9kddCaXMbpSkSrgk83o59rk2FLLoq7+ahzA==
   dependencies:
     openai "^4.58.1"
 
